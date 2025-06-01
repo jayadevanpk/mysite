@@ -10,23 +10,21 @@
       background-color: #ffffff;
       font-family: 'Courier Prime', monospace;
       max-width: 800px;
-      margin: 0 auto;
-      padding: 100px 40px 40px 40px;
+      margin: 60px auto;
+      padding: 40px;
       color: #000000;
       line-height: 1.6;
       border: 2px solid #000000;
       box-shadow: 0 0 10px #dddddd;
-      position: relative;
     }
     nav {
-      position: fixed;
+      position: sticky;
       top: 0;
-      left: 0;
-      width: 100%;
       background-color: #ffffff;
-      border-bottom: 2px solid #000000;
-      padding: 10px 0;
       text-align: center;
+      margin-bottom: 30px;
+      padding: 10px 0;
+      border-bottom: 2px solid #000000;
       z-index: 1000;
     }
     nav a {
@@ -47,13 +45,10 @@
       text-align: center;
       font-size: 2em;
       margin-bottom: 30px;
+      color: #000000;
     }
-    h2 {
-      margin-top: 40px;
-      font-size: 1.5em;
-      color: #000;
-    }
-    .blurb, .praise {
+    p {
+      font-size: 1em;
       margin-bottom: 20px;
     }
     a {
@@ -61,10 +56,20 @@
       background-color: #ffff00;
       text-decoration: none;
       padding: 0 4px;
+      transition: background-color 0.3s, text-decoration 0.3s;
     }
     a:hover {
       background-color: #ffeb3b;
       text-decoration: underline;
+    }
+    .profile-img {
+      float: left;
+      margin: 0 20px 20px 0;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #000000;
     }
   </style>
 </head>
