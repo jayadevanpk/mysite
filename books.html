@@ -10,12 +10,38 @@
       background-color: #ffffff;
       font-family: 'Courier Prime', monospace;
       max-width: 800px;
-      margin: 60px auto;
-      padding: 40px;
+      margin: 0 auto;
+      padding: 100px 40px 40px 40px;
       color: #000000;
       line-height: 1.6;
       border: 2px solid #000000;
       box-shadow: 0 0 10px #dddddd;
+      position: relative;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      border-bottom: 2px solid #000000;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #000000;
+      background-color: #ffff00;
+      padding: 4px 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffeb3b;
+      color: #333333;
     }
     h1 {
       text-align: center;
@@ -43,6 +69,7 @@
   </style>
 </head>
 <body>
+
   <nav>
     <a href="index.html">About</a>
     <a href="books.html">Books</a>
@@ -51,7 +78,7 @@
   <h1>Books by Jayadevan PK</h1>
 
   <h2>Xiaomi: How a Startup Disrupted the Market and Created a Cult Following</h2>
-  <p><strong>Published:</strong> April 2021, Harper Collins<br>
+  <p><strong>Published:</strong> 2021<br>
      <strong>Amazon Rating:</strong> 4.4 ★<br>
      <strong>Buy:</strong> <a href="https://www.amazon.in/Xiaomi-Startup-Disrupted-Created-Following/dp/9390327040" target="_blank">Amazon India</a>
   </p>
