@@ -6,71 +6,117 @@
   <title>Side Quests by Jayadevan PK</title>
   <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #ffffff;
-      font-family: 'Courier Prime', monospace;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 40px;
-      color: #000000;
-      line-height: 1.6;
-      border: 2px solid #000000;
-      box-shadow: 0 0 10px #dddddd;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background-color: #ffffff;
-      text-align: center;
-      margin-bottom: 30px;
-      padding: 10px 0;
-      border-bottom: 2px solid #000000;
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #000000;
-      background-color: #ffff00;
-      padding: 4px 8px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    nav a:hover {
-      background-color: #ffeb3b;
-      color: #333333;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 30px;
-      color: #000000;
-    }
-    p {
-      font-size: 1em;
-      margin-bottom: 20px;
-    }
-    a {
-      color: #000000;
-      background-color: #ffff00;
-      text-decoration: none;
-      padding: 0 4px;
-      transition: background-color 0.3s, text-decoration 0.3s;
-    }
-    a:hover {
-      background-color: #ffeb3b;
-      text-decoration: underline;
-    }
-    .profile-img {
-      float: left;
-      margin: 0 20px 20px 0;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid #000000;
-    }
+   body {
+  background-color: #ffffff;
+  font-family: 'Courier Prime', monospace;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  color: #000000;
+  line-height: 1.6;
+  border: 2px solid #000000;
+  box-shadow: 0 0 10px #dddddd;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-bottom: 2px solid #000000;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+  background-color: #ffff00;
+  border: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-family: 'Courier Prime', monospace;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #000000;
+  background-color: #ffff00;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ffeb3b;
+  color: #333333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #000000;
+  background-color: #ffff00;
+  text-decoration: none;
+  padding: 0 4px;
+  transition: background-color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+  background-color: #ffeb3b;
+  text-decoration: underline;
+}
+
+.profile-img {
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
   </style>
 </head>
 <body>
