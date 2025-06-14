@@ -121,15 +121,25 @@ a:hover {
 </head>
 <body>
 
-  <nav>
-  <a href="index.html">About</a>
-  <a href="books.html">Books</a>
-  <a href="sidequests.html">Side Quests</a>
+ <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <div class="nav-links">
+    <a href="index.html">About</a>
+    <a href="books.html">Books</a>
+    <a href="sidequests.html">Side Quests</a>
+  </div>
 </nav>
+
 <h1>Side Quests</h1>
 
 <h2>Sobriety Tracker (Chrome Extension)</h2>
 <p><strong><a href="https://chromewebstore.google.com/detail/sobriety-progress-tracker/lkhcbedngciklnjmobgpaoiakfbmndna" target="_blank">Sobriety Tracker</a></strong> is a minimalist Chrome extension that helps you stay committed to your no-drinking goals. It shows your progress since the last drink, surfaces motivational health milestones, and includes a reset button. Built for privacy and simplicity.</p>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.nav-links');
+    menu.classList.toggle('show');
+  }
+</script>
 
 </body>
 </html>
